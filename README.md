@@ -67,7 +67,7 @@ GitHub Actions automates the following on each push to `main` branch:
 
 ## Architecture Diagram
 
-![AWS Architecture Diagram](screenshots/architecture-diagram.png)
+![AWS Architecture Diagram](archtectureDiagram.drawio.png)
 
 ---
 
