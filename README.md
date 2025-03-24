@@ -134,16 +134,18 @@ Directions to run the project
 
 - Activate the virtual environment by typing the following command on the prompt 
 
-        source env/bin/activate
+          source env/bin/activate
 
 - Run the python server with the following command
-        python manage.py runserver
+
+          python manage.py runserver
 
 # Getting Started with Frontend Quiz App
 
-- Open a new terminal for frontend, go into the folder and run npm install to install all the dependencies
-- cd frontend
-- npm start
+- Open a new terminal for frontend, go into the folder and run **npm install** to install all the dependencies
+  
+          cd frontend
+          npm start
 
 ## Author
 
