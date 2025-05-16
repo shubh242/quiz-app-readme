@@ -148,7 +148,7 @@ Directions to run the project
           npm start
 Running Backend Tests
 
-python manage.py test quiz_api.tests
+        python manage.py test backend/quiz/quiz_api.tests
 
 Test database is used for isolation. Activate your virtual environment before running.
 
