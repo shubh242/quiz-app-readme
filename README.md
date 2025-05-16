@@ -146,6 +146,13 @@ Directions to run the project
   
           cd frontend
           npm start
+Running Backend Tests
+
+python manage.py test quiz_api.tests
+
+Test database is used for isolation. Activate your virtual environment before running.
+
+
 
 ## Author
 
