@@ -91,7 +91,7 @@ GitHub Actions automates the following on each push to `main` branch:
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 API-Applicaiton/                      
