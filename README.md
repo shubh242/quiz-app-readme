@@ -21,10 +21,30 @@
 
 ## Backend API Overview
 
-        - /api/users/register/           -       to register the user, you will get the refresh and access token (validity - 300 mins).
-        - /api/token/refresh/            -       add refresh token in the parameters and you will get a fresh access token.
-        - /quiz/quizzes/                 -       use http methods to do CRUD operations. For put and delete add the quiz id in the parameters as 'id'.
-        - /quiz/questions/               -       use http methods to do CRUD operations. For put and delete add the quiz id in the parameters as 'id'.
+#### Quiz and Question Endpoints
+
+        Quizzes
+        
+                * `GET /quiz/quizzes/` – List all quizzes
+                * `POST /quiz/quizzes/` – Create a new quiz
+                * `GET /quiz/quizzes/<id>/` – Get a quiz by ID
+                * `PATCH /quiz/quizzes/<id>/` – Update a quiz’s title or description
+                * `DELETE /quiz/quizzes/<id>/` – Delete a quiz (creator only)
+        
+        Questions
+        
+                * `GET /quiz/questions/` – List all questions
+                * `POST /quiz/questions/` – Create a new question with choices
+                * `PATCH /quiz/questions/<id>/` – Update question text or choices
+                * `DELETE /quiz/questions/<id>/` – Delete a question
+        
+        
+        Key Functional Features
+        
+                * Create quizzes with nested questions and single/multiple correct choices
+                * Role-based permissions: quiz creators can edit/delete, others can only attempt
+                * Inline frontend editing of quiz metadata and questions
+                * Scoring handled client-side (no answer submission endpoint)
 
 > **Tested using Postman**
 
